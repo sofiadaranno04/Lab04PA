@@ -12,7 +12,7 @@ class Stand:
         return self.__prezzo_base
 
     def __str__(self):
-        stato = "Disponibilità" if self.__dispinibile else "Occupato"
+        stato = "Disponibilità" if self.__disponibilità else "Occupato"
 
         return f'{self.__codice}: {self.__superficie}mq - Padiglione {self.__padiglione} - Prezzo {self.calcola_prezzo():.2f}€ - {stato}'
 

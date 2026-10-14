@@ -7,3 +7,7 @@ class StandPremium(Stand):
 
     def calcola_prezzo(self):
         return self.prezzo_base * 1.30
+
+    def __str__(self):
+        return super().__str__() + f" - Premium: {self._posizione}"
+
